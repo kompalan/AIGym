@@ -1,0 +1,7 @@
+Getting Started - How to run the project
+
+This project uses the CMake build system. To run the project, create
+a directory at the root of the project called build. Then, within that
+directory, run `cmake -S ..`. After this completes successfully, you can
+run `make`, which will build an aigym binary in the src/ directory
+within build/
