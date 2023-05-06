@@ -1,8 +1,21 @@
 #include "engine.H"
 
-using Engine::AnuragEngine;
+using Engine::AIGym;
 
-void AnuragEngine::DeliverMessage()
+void Engine::AIGym::StartApplication()
 {
-    std::cout << this->message << std::endl;
+    mWindow = std::make_shared<Graphics::Window>(800, 600, "Anurag's Window");
+    mWindow->CreateWindow();
+
+    while(!mWindow->WindowShouldClose())
+    {
+        mWindow->Update();
+    }
+
+    mWindow->Close();
+}
+
+void Engine::AIGym::OnEvent(Engine::Event::Event& e)
+{
+
 }
